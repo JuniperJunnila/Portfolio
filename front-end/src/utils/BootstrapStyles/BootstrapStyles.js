@@ -39,7 +39,7 @@ const bootstrapStyles = {
   navBar: {
     nav: "navbar text-bg-light container-fluid mt-0 pt-0",
     brand: "navbar-brand",
-    logo: "custom-logo",
+    logo: "w-100",
     toggle: "navbar-toggler m-3",
     toggleIcon: "navbar-toggler-icon",
     navbarSupportedContent: "collapse navbar-collapse navbar-expand-md",

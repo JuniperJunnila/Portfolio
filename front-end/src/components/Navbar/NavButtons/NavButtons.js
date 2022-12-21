@@ -1,9 +1,10 @@
 import bootstrapStyles from "../../../utils/BootstrapStyles/BootstrapStyles";
 
-const { navButtons } = bootstrapStyles;
-const { group, button } = navButtons;
+const {
+  navButtons: { group, button },
+} = bootstrapStyles;
 
-export default function NavButtons({}) {
+export default function NavButtons({ appState }) {
   return (
     <div className={group} id="group">
       <button

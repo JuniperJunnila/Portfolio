@@ -1,11 +1,14 @@
 import React from "react";
 
-const temp = { tempName1: "container-fluid", tempName2: "m-3" };
+import allStyles from "../../utils/AllStyles/AllStyles";
+const {
+  template: { fluid, div },
+} = allStyles;
 
-export default function Component1() {
+export default function Template() {
   return (
-    <div className={tempName1} id="tempName1">
-      <div className={tempName2} id="tempName2">
+    <div className={fluid} id="tempName1">
+      <div className={div} id="tempName2">
         {/* content */}
       </div>
     </div>

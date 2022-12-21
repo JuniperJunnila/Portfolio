@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import AllRoutes from "./utils/Routes/Routes.js";
 import bootstrapStyles from "./utils/BootstrapStyles/BootstrapStyles.js";
-const { app } = bootstrapStyles;
-const { cards, button, round, card2, pleaseEmail, editButton } = app;
+const { app: { cards, button, round, card2, pleaseEmail, editButton } } = bootstrapStyles;
+
 
 export default function App() {
   // const UPLOAD_STATES = {

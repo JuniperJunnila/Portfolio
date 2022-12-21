@@ -1,11 +1,11 @@
-import "./Footer.css";
 import React from "react";
 import { Facebook, Yelp, Google, Instagram } from "react-bootstrap-icons";
 import { Row, Col } from "react-bootstrap";
 import bootstrapStyles from "../../utils/BootstrapStyles/BootstrapStyles";
 
-const { footerStyles } = bootstrapStyles;
-const { footer, container, section, button, info, linkLight } = footerStyles;
+const {
+  footerStyles: { footer, container, section, button, info, linkLight },
+} = bootstrapStyles;
 
 export default function Footer({ appState }) {
   const { footerState } = appState;

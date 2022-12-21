@@ -1,8 +1,9 @@
 import React from "react";
 import bootstrapStyles from "../BootstrapStyles/BootstrapStyles.js";
 
-const { pageNotImplemented } = bootstrapStyles;
-const { wrapper, header1 } = pageNotImplemented;
+const {
+  pageNotImplemented: { wrapper, header1 },
+} = bootstrapStyles;
 
 export default function PageNotImplemented({ pageName }) {
   return (

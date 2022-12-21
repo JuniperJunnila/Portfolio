@@ -1,26 +1,26 @@
 import React from "react";
-import "./Navbar.css";
 import NavButtons from "./NavButtons/NavButtons.js";
 import bootstrapStyles from "../../utils/BootstrapStyles/BootstrapStyles";
 
-const { navBar } = bootstrapStyles;
 const {
-  nav,
-  brand,
-  logo,
-  toggle,
-  toggleIcon,
-  navbarSupportedContent,
-  list,
-  listContainer,
-  listItem,
-  llinkActive,
-  dropdown,
-  dropdownToggle,
-  dropdownMenu,
-  dropdownItem,
-  buttons,
-} = navBar;
+  navBar: {
+    nav,
+    brand,
+    logo,
+    toggle,
+    toggleIcon,
+    navbarSupportedContent,
+    list,
+    listContainer,
+    listItem,
+    llinkActive,
+    dropdown,
+    dropdownToggle,
+    dropdownMenu,
+    dropdownItem,
+    buttons,
+  },
+} = bootstrapStyles;
 
 export default function Navbar() {
   return (

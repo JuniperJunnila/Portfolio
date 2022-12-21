@@ -5,8 +5,9 @@ import Footer from "../../components/Footer/Footer.js";
 import PageNotImplemented from "../PageNotImplemented/PageNotImplemented.js";
 import bootstrapStyles from "../BootstrapStyles/BootstrapStyles.js";
 
-const { routes } = bootstrapStyles;
-const { allRoutes, browserRouter, routeDivs, footer } = routes;
+const {
+  routes: { allRoutes, browserRouter, routeDivs, footer },
+} = bootstrapStyles;
 
 export default function AllRoutes({ appState }) {
   return (

@@ -13,6 +13,7 @@ const allStyles = {
     routeDivs: "m-0",
     footer: "m-3",
   },
+  template: { fluid: "container-fluid", div: "m-3" },
   pageNotImplemented: {
     wrapper: "container-fluid",
     header1: "m-3 p-3 text-center",

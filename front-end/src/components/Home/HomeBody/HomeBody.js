@@ -2,8 +2,9 @@ import React from "react";
 import { Row } from "react-bootstrap";
 import bootstrapStyles from "../../../utils/BootstrapStyles/BootstrapStyles";
 
-const { homeBody } = bootstrapStyles;
-const { wrapper, h1Wrap, h1, homeP, cardsWrap } = homeBody;
+const {
+  homeBody: { wrapper, h1Wrap, h1, homeP, cardsWrap },
+} = bootstrapStyles;
 
 export default function HomeBody({ appState }) {
   const { adminView } = appState.navState;
