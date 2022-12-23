@@ -1,14 +1,10 @@
-import bootstrapStyles from "../../../utils/BootstrapStyles/BootstrapStyles";
 
-const {
-  navButtons: { group, button },
-} = bootstrapStyles;
 
 export default function NavButtons({ appState }) {
   return (
-    <div className={group} id="group">
+    <div className="group" id="group">
       <button
-        className={button}
+        className="button"
         type="button"
         id="false"
         onClick={null}
@@ -17,7 +13,7 @@ export default function NavButtons({ appState }) {
         User
       </button>
       <button
-        className={button}
+        className="button"
         type="button"
         id="true"
         onClick={null}

@@ -1,10 +1,5 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-import bootstrapStyles from "../../../utils/BootstrapStyles/BootstrapStyles";
-
-const {
-  homeBody: { wrapper, h1Wrap, h1, homeP, cardsWrap },
-} = bootstrapStyles;
 
 export default function HomeBody({ appState }) {
   const { adminView } = appState.navState;
@@ -28,18 +23,18 @@ export default function HomeBody({ appState }) {
   renderCards();
 
   return (
-    <div className={wrapper} id="wrapper">
-      <div className={h1Wrap} id="h1Wrap">
-        <h1 className={h1} id="h1">
+    <div className="body-wrapper" id="body-wrapper">
+      <div className="h1-wrap" id="h1-wrap">
+        <h1 className="h1" id="h1">
           Welcome
         </h1>
       </div>
       <Row>
-        <div className={homeP} id="homeP">
+        <div className="home-p" id="home-p">
           {adminView ? editButtons[0] : null}
           {body.para}
         </div>
-        <div className={cardsWrap} id="cardsWrap">
+        <div className="cards-wrap" id="cards-wrap">
           {currentCards}
         </div>
       </Row>

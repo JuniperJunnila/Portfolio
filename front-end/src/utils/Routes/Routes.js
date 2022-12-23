@@ -3,21 +3,16 @@ import Navbar from "../../components/Navbar/Navbar.js";
 import Home from "../../components/Home/Home.js";
 import Footer from "../../components/Footer/Footer.js";
 import PageNotImplemented from "../PageNotImplemented/PageNotImplemented.js";
-import bootstrapStyles from "../BootstrapStyles/BootstrapStyles.js";
-
-const {
-  routes: { allRoutes, browserRouter, routeDivs, footer },
-} = bootstrapStyles;
 
 export default function AllRoutes({ appState }) {
   return (
-    <div className={allRoutes} id="allRoutes">
+    <div className="all-routes" id="all-routes">
       <BrowserRouter>
-        <div className={browserRouter} id="browserRouter">
-          <div className={routeDivs} id="routeDivs">
+        <div className="browser-router" id="browser-router">
+          <div className="route-divs" id="route-divs">
             <Navbar appState={appState} />
           </div>
-          <div className={routeDivs} id="routeDivs">
+          <div className="route-divs" id="route-divs">
             <Routes>
               <Route path="" element={<Home appState={appState} />} />
               <Route
@@ -26,7 +21,7 @@ export default function AllRoutes({ appState }) {
               />
             </Routes>
           </div>
-          <div className={footer} id="footer">
+          <div className="footer-route" id="footer">
             <Footer appState={appState} />
           </div>
         </div>

@@ -1,0 +1,10 @@
+@use "./styles/base.scss";
+@use "./styles/mixins.scss";
+@use "./styles/variables.scss";
+
+@use "./styles/components/app.scss";
+@use "./styles/components/footer.scss";
+@use "./styles/components/home.scss";
+@use "./styles/components/nav.scss";
+@use "./styles/components/pni.scss";
+@use "./styles/components/routes.scss";

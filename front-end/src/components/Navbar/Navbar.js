@@ -1,41 +1,21 @@
 import React from "react";
 import NavButtons from "./NavButtons/NavButtons.js";
-import bootstrapStyles from "../../utils/BootstrapStyles/BootstrapStyles";
 
-const {
-  navBar: {
-    nav,
-    brand,
-    logo,
-    toggle,
-    toggleIcon,
-    navbarSupportedContent,
-    list,
-    listContainer,
-    listItem,
-    llinkActive,
-    dropdown,
-    dropdownToggle,
-    dropdownMenu,
-    dropdownItem,
-    buttons,
-  },
-} = bootstrapStyles;
 
 export default function Navbar() {
   return (
-    <nav className={nav} id="nav">
+    <nav className="nav" id="nav">
       <div>
-        <a className={brand} id="brand" href="/">
+        <a className="brand" id="brand" href="/">
           <img
-            className={logo}
+            className="logo"
             id="logo"
             src="https://contentcoms.co.uk/wp-content/uploads/2017/05/case-study-header-placeholder.png"
             alt="Banner"
           />
         </a>
         <button
-          className={toggle}
+          className="toggle"
           id="toggle"
           type="button"
           data-bs-toggle="collapse"
@@ -43,27 +23,27 @@ export default function Navbar() {
           aria-controls="navbarSupportedContent"
           aria-label="Toggle navigation"
         >
-          <span className={toggleIcon} id="toggleIcon"></span>
+          <span className="toggle-icon" id="toggle-icon"></span>
         </button>
       </div>
-      <div className={navbarSupportedContent} id="navbarSupportedContent">
-        <ul className={list} id="list">
-          <div className={listContainer} id="listContainer">
-            <li className={listItem} id="listItem">
+      <div className="navbar-supported-content" id="navbarSupportedContent">
+        <ul className="list" id="list">
+          <div className="list-container" id="list-container">
+            <li className="list-item" id="list-item">
               <a
-                className={llinkActive}
-                id="llinkActive"
+                className="link-active"
+                id="link-active"
                 aria-current="page"
                 href="/"
               >
-                Welcome
+                Home
               </a>
             </li>
 
-            <li className={listItem} id="listItem">
+            <li className="list-item" id="list-item">
               <a
-                className={llinkActive}
-                id="llinkActive"
+                className="link-active"
+                id="link-active"
                 aria-current="page"
                 href="/our-philosophy"
               >
@@ -71,10 +51,10 @@ export default function Navbar() {
               </a>
             </li>
 
-            <li className={dropdown} id="dropdown">
+            <li className="dropdown" id="dropdown">
               <a
-                className={dropdownToggle}
-                id="dropdownToggle"
+                className="dropdown-toggle"
+                id="dropdown-toggle"
                 href="/about-us"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -82,11 +62,11 @@ export default function Navbar() {
               >
                 About Us
               </a>
-              <ul className={dropdownMenu} id="dropdownMenu">
+              <ul className="dropdown-menu" id="dropdown-menu">
                 <li>
                   <a
-                    className={dropdownItem}
-                    id="dropdownItem"
+                    className="dropdown-item"
+                    id="dropdown-item"
                     href="/our-curriculum"
                   >
                     Our Curriculum
@@ -94,8 +74,8 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a
-                    className={dropdownItem}
-                    id="dropdownItem"
+                    className="dropdown-item"
+                    id="dropdown-item"
                     href="/our-staff"
                   >
                     Our Staff
@@ -104,10 +84,10 @@ export default function Navbar() {
               </ul>
             </li>
 
-            <li className={dropdown} id="dropdown">
+            <li className="dropdown" id="dropdown">
               <a
-                className={dropdownToggle}
-                id="dropdownToggle"
+                className="dropdown-toggle"
+                id="dropdown-toggle"
                 href="/our-programs"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -115,11 +95,11 @@ export default function Navbar() {
               >
                 Our Programs
               </a>
-              <ul className={dropdownMenu} id="dropdownMenu">
+              <ul className="dropdown-menu" id="dropdown-menu">
                 <li>
                   <a
-                    className={dropdownItem}
-                    id="dropdownItem"
+                    className="dropdown-item"
+                    id="dropdown-item"
                     href="/green-room"
                   >
                     Green Room (2-3 Years)
@@ -127,8 +107,8 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a
-                    className={dropdownItem}
-                    id="dropdownItem"
+                    className="dropdown-item"
+                    id="dropdown-item"
                     href="/red-and-purple-rooms"
                   >
                     Red & Purple Rooms (3-4 Years)
@@ -136,8 +116,8 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a
-                    className={dropdownItem}
-                    id="dropdownItem"
+                    className="dropdown-item"
+                    id="dropdown-item"
                     href="/blue-and-yellow-rooms"
                   >
                     Blue & Yellow Rooms (PreK)
@@ -146,10 +126,10 @@ export default function Navbar() {
               </ul>
             </li>
 
-            <li className={dropdown} id="dropdown">
+            <li className="dropdown" id="dropdown">
               <a
-                className={dropdownToggle}
-                id="dropdownToggle"
+                className="dropdown-toggle"
+                id="dropdown-toggle"
                 href="/for-our-families"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -157,11 +137,11 @@ export default function Navbar() {
               >
                 For Our Families
               </a>
-              <ul className={dropdownMenu} id="dropdownMenu">
+              <ul className="dropdown-menu" id="dropdown-menu">
                 <li>
                   <a
-                    className={dropdownItem}
-                    id="dropdownItem"
+                    className="dropdown-item"
+                    id="dropdown-item"
                     href="/forms-and-nfo"
                   >
                     Forms & Information
@@ -169,8 +149,8 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a
-                    className={dropdownItem}
-                    id="dropdownItem"
+                    className="dropdown-item"
+                    id="dropdown-item"
                     href="/family-resources"
                   >
                     Family Resources
@@ -179,17 +159,17 @@ export default function Navbar() {
               </ul>
             </li>
 
-            <li className={listItem} id="listItem">
+            <li className="list-item" id="list-item">
               <a
-                className={llinkActive}
-                id="llinkActive"
+                className="link-active"
+                id="link-active"
                 aria-current="page"
                 href="/contact-us"
               >
                 Contact Us
               </a>
             </li>
-            <li className={buttons} id="buttons">
+            <li className="buttons" id="buttons">
               <NavButtons />
             </li>
           </div>

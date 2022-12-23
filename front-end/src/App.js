@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import AllRoutes from "./utils/Routes/Routes.js";
-import bootstrapStyles from "./utils/BootstrapStyles/BootstrapStyles.js";
-const { app: { cards, button, round, card2, pleaseEmail, editButton } } = bootstrapStyles;
 
 
 export default function App() {
@@ -99,10 +97,10 @@ export default function App() {
             </p>,
           ],
           cards: [
-            <div className={cards} id="cards" key="card1">
+            <div className="cards" id="cards" key="card1">
               <button
                 id="button"
-                className={button}
+                className="button"
                 to="#"
                 onClick={(e) => {
                   window.location.href = "/";
@@ -111,10 +109,10 @@ export default function App() {
               >
                 card 1
               </button>
-              <h4 className={round} id="round">
+              <h4 className="round" id="round">
                 card 1!
               </h4>
-              <p className={round} id="round">
+              <p className="round" id="round">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 felis mauris, pulvinar eu mi nec, vulputate lobortis nunc.
                 Aliquam lobortis, quam eget viverra pharetra, risus tellus
@@ -123,10 +121,10 @@ export default function App() {
                 et semper elementum. Morbi ut.
               </p>
             </div>,
-            <div className={card2} id="card2" key="card2">
+            <div className="cards" id="card2" key="card2">
               <button
                 id="button"
-                className={button}
+                className="button"
                 to="#"
                 onClick={(e) => {
                   window.location.href = "/";
@@ -135,10 +133,10 @@ export default function App() {
               >
                 card 2
               </button>
-              <h4 className={round} id="round">
+              <h4 className="round" id="round">
                 card 2.
               </h4>
-              <p className={pleaseEmail} id="pleaseEmail">
+              <p className="please-email" id="please-email">
                 Aenean placerat eros nec justo tincidunt porta. Interdum et
                 malesuada fames ac ante ipsum primis in faucibus. Quisque
                 sodales egestas pharetra. Curabitur molestie et felis vitae
@@ -150,28 +148,28 @@ export default function App() {
           ],
           editButtons: [
             <button
-              className={editButton}
+              className="edit-button"
               type="button"
               key="edit-paragraphs"
-              id="editButton"
+              id="edit-button"
               onClick={toggleToggle}
             >
               Edit Body Text
             </button>,
             <button
-              className={editButton}
+              className="edit-button"
               type="button"
               key="edit-card1"
-              id="editButton"
+              id="edit-button"
               onClick={toggleToggle}
             >
               Edit card1 Text
             </button>,
             <button
-              className={editButton}
+              className="edit-button"
               type="button"
               key="edit-card2"
-              id="editButton"
+              id="edit-button"
               onClick={toggleToggle}
             >
               Edit card2 Text

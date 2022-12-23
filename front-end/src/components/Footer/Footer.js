@@ -1,11 +1,7 @@
 import React from "react";
 import { Facebook, Yelp, Google, Instagram } from "react-bootstrap-icons";
 import { Row, Col } from "react-bootstrap";
-import bootstrapStyles from "../../utils/BootstrapStyles/BootstrapStyles";
 
-const {
-  footerStyles: { footer, container, section, button, info, linkLight },
-} = bootstrapStyles;
 
 export default function Footer({ appState }) {
   const { footerState } = appState;
@@ -30,37 +26,37 @@ export default function Footer({ appState }) {
   renderCredits(credits);
 
   return (
-    <footer className={footer} id="footer">
-      <div className={container} id="container">
-        <section className={section} id="section">
-          <a className={button} id="button" href={facebook}>
+    <footer className="footer" id="footer">
+      <div className="container" id="container">
+        <section className="section" id="section">
+          <a className="footer-button" id="footer-button" href={facebook}>
             <Facebook color="#3b5998" />
           </a>
-          <a className={button} id="button" href={yelp}>
+          <a className="footer-button" id="footer-button" href={yelp}>
             <Yelp color="#c41200" />
           </a>
-          <a className={button} id="button" href={google}>
+          <a className="footer-button" id="footer-button" href={google}>
             <Google color="#dd4b39" />
           </a>
-          <a className={button} id="button" href={instagram}>
+          <a className="footer-button" id="footer-button" href={instagram}>
             <Instagram color="#ac2bac" />
           </a>
         </section>
 
         {/* Section: Text */}
-        <section className={section} id="section">
-          <div className={info} id="info">
+        <section className="section" id="section">
+          <div className="info" id="info">
             <Row>{renderedCredits}</Row>
             <Row>
               <Col>
                 <h6>Loacted at</h6>
-                <a className={linkLight} id="linkLight" href={locale}>
+                <a className="link-light" id="link-light" href={locale}>
                   <p>{localeContents}</p>
                 </a>
               </Col>
               <Col>
                 <h6>Email us at</h6>
-                <a className={linkLight} id="linkLight" href={email}>
+                <a className="link-light" id="link-light" href={email}>
                   <p>{emailContents}</p>
                 </a>
               </Col>
